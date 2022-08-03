@@ -1,0 +1,58 @@
+.zhongshan-branch .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.zhongshan-branch .news {
+  width: 40%;
+  margin-right: 24px; }
+  .zhongshan-branch .news h2 {
+    border: 1px solid #00000020;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px; }
+  .zhongshan-branch .news .content-li {
+    border: 1px solid #00000020;
+    padding-left: 24px; }
+    .zhongshan-branch .news .content-li a {
+      color: #000000; }
+    .zhongshan-branch .news .content-li i {
+      padding-right: 10px; }
+
+@media (max-width: 768px) {
+  .zhongshan-branch .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .zhongshan-branch .news {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: 0; }
+    .zhongshan-branch .news img {
+      width: 50%;
+      margin-right: 24px; }
+    .zhongshan-branch .news-li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      margin-bottom: 24px; } }
+
+@media (max-width: 414px) {
+  .zhongshan-branch {
+    margin-bottom: 64px; }
+    .zhongshan-branch .news img {
+      width: 100%; }
+    .zhongshan-branch .news-li {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .store-base {
+    margin-top: 40px; } }
+
+/*# sourceMappingURL=web6.css.map */
