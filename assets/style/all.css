@@ -183,6 +183,12 @@ a {
 .mt-12 {
   margin-top: 96px; }
 
+.pr-12 {
+  padding-right: 12px; }
+
+.pl-12 {
+  padding-left: 12px; }
+
 @media (max-width: 414px) {
   .fz-36 {
     font-size: 16px;
@@ -1267,7 +1273,7 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     color: white;
-    max-width: 1344px;
+    max-width: 1311px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
@@ -1403,5 +1409,161 @@ a {
       margin-left: 0; }
   .subnav {
     margin-bottom: 64px; } }
+
+.path {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .path a {
+    color: #000000; }
+  .path a:hover {
+    color: #AA0601; }
+  .path .active {
+    color: #AA0601; }
+
+.web-9 .container-tab-link {
+  max-width: 1311px;
+  margin: 0 auto; }
+  .web-9 .container-tab-link .tab-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .web-9 .container-tab-link .tab-link a {
+      color: #AA0601; }
+    .web-9 .container-tab-link .tab-link a:hover {
+      opacity: 0.5; }
+
+.web-9 .tab {
+  color: #AA0601; }
+  .web-9 .tab ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .web-9 .tab li {
+    margin-right: 24px;
+    margin-bottom: 4px; }
+  .web-9 .tab a {
+    color: #AA0601; }
+  .web-9 .tab span {
+    margin-right: 12px; }
+  .web-9 .tab h2 {
+    margin-bottom: 4px; }
+
+.web-9 .content .container-df {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.web-9 .list {
+  width: 60%;
+  margin-right: 24px; }
+  .web-9 .list-content li {
+    margin-bottom: 40px; }
+  .web-9 .list-content img {
+    margin-bottom: 8px; }
+
+.web-9 .shre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #707070;
+  padding-bottom: 16px;
+  margin-bottom: 24px; }
+  .web-9 .shre li {
+    margin-right: 16px; }
+  .web-9 .shre img {
+    width: 24px; }
+  .web-9 .shre a {
+    color: #000000; }
+  .web-9 .shre a:hover {
+    opacity: 0.5; }
+  .web-9 .shre-mini {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    display: none; }
+    .web-9 .shre-mini li {
+      margin-right: 16px; }
+    .web-9 .shre-mini img {
+      width: 24px; }
+    .web-9 .shre-mini a {
+      color: #000000; }
+    .web-9 .shre-mini a:hover {
+      opacity: 0.5; }
+
+.web-9 .change-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .web-9 .change-page a {
+    color: #000000; }
+  .web-9 .change-page-mini {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: none; }
+    .web-9 .change-page-mini a {
+      color: #000000; }
+
+@media (max-width: 768px) {
+  .web-9 .container-tab-link {
+    max-width: 696px; }
+  .web-9 .shre {
+    display: none; }
+    .web-9 .shre-mini {
+      display: block;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  .web-9 .change-page {
+    display: none; }
+    .web-9 .change-page-mini {
+      display: block;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+@media (max-width: 414px) {
+  .web-9 {
+    margin-bottom: 64px; }
+    .web-9 .container-tab-link {
+      max-width: 348px; }
+      .web-9 .container-tab-link .tab-link {
+        font-size: 16px;
+        line-height: 24px; }
+        .web-9 .container-tab-link .tab-link li {
+          padding-right: 16px; }
+    .web-9 .shre-mini {
+      display: none; }
+    .web-9 .change-page-mini {
+      display: none; }
+    .web-9 .tab {
+      display: none; }
+    .web-9 .list {
+      width: 100%; }
+      .web-9 .list h1 {
+        font-size: 24px;
+        line-height: 36px; }
+      .web-9 .list h2 {
+        font-size: 16px;
+        line-height: 24px; }
+      .web-9 .list-content li {
+        margin-bottom: 16px; } }
 
 /*# sourceMappingURL=all.css.map */
