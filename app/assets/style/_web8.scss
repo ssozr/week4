@@ -1,0 +1,157 @@
+
+.page8-subnav{
+    background-color: #650300;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        max-width: 1311px;
+        align-items: center;
+    }
+    ul{
+        display: flex;
+    }
+    a{
+        padding:24px 13px;
+        color: white;
+    }
+    a:hover{
+        color: black;
+    }
+}
+
+.blog{
+    margin-bottom: 124px;
+    img{
+        width: 50%;
+    }
+    h1{
+        border-left: 8px solid #9F1213;
+        padding-left: 16px;    
+    }
+    .article{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    .content{
+        margin-left: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .title{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+    }
+    h2{
+        width: 100%;
+    }
+    a{
+        color: #650300;
+    }
+    a:hover{
+        color: #AA0601;
+    }
+    .more{
+        font-size: 36px;
+        line-height: 54px;
+        font-weight: 900;
+    }
+    h3{
+        font-weight: 500;
+    }
+}
+
+.subnav{
+    font-weight: 500;
+    ul{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    a{
+        padding: 12px 16px;
+        float: left;
+        border: 1px solid #555555;
+    }
+    .change-page{
+        a{
+            padding: 11px 12px;
+        }
+    }
+    .active{
+        background-color: #000000;
+        color: white;
+    }
+    a:hover{
+        background-color: black;
+        color: white;
+    }
+}
+
+@media (max-width:768px){
+    .blog{
+        .more{
+            display: none;
+        }
+        h2{
+            font-size: 24px;
+            line-height: 36px;
+            text-align: left;
+        }
+        h3{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .article{
+            margin-bottom: 24px;
+        }
+        .title{
+            margin-bottom: 0;
+        }
+        margin-bottom: 80px;
+    }
+}
+@media (max-width:414px){
+    .page8-subnav{
+        display: none;
+    }
+    .blog{
+        h1{
+            font-size: 24px;
+            line-height: 36px;
+            margin-top: 40px;
+            margin-bottom: 24px;
+        }
+        .article{
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .news{
+            display: none;
+        }
+        .content{
+            margin-left: 0;
+        }
+        margin-bottom: 64px;
+    }
+    .subnav{
+        margin-bottom: 64px;
+    }
+    
+
+}
+

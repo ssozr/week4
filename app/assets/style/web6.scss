@@ -1,0 +1,69 @@
+.zhongshan-branch{
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .news{
+        width: 40%;
+        margin-right: 24px;
+        h2{
+            border:1px solid #00000020 ;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 24px;
+        }
+        .content{
+            &-li{
+                border: 1px solid #00000020;  
+                padding-left: 24px;
+                a{
+                    color: #000000;
+                }
+                i{
+                    padding-right: 10px;
+                } 
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .zhongshan-branch{
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .news{
+            width: 100%;
+            flex-wrap: wrap;
+            margin-right: 0;
+            img{
+                width: 50%;
+                margin-right: 24px;
+            }
+            &-li{
+                display: flex;
+                width: 100%;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width:414px){
+    .zhongshan-branch{
+        margin-bottom: 64px;
+        .news{
+            img{
+                width: 100%;
+            }
+            &-li{
+                flex-wrap: wrap;
+            }
+        }
+    }
+    .store-base{
+        margin-top: 40px;
+    }
+
+}

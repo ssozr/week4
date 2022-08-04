@@ -1,0 +1,216 @@
+
+.page2-nav{
+    ul{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    li{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border-left: 1px solid #DCDCDC;
+        border-right: 1px solid #DCDCDC;
+    }
+    a{
+        text-align: center;
+        width: 100%;
+        color: black;
+        padding: 24px 0;
+    }
+    a:hover{
+        border-bottom: 4px solid #AA0601;
+    }
+    .active{
+        border-bottom: 4px solid #AA0601;
+    }
+    a:hover:not(.active){        
+        border-bottom: 4px solid #AA0601;
+    }
+}
+
+.page2-optical{
+    ul{
+        display: flex;
+    }
+    li{
+        width: 50%;
+    }
+    .glass{
+        background-image:url(../images/product-header-1.png);
+        height: 296px;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .person{
+        background-image: url(../images/product-header-2.png);
+        height: 296px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.Celluloid-Combi{
+    text-align: center;
+    h1{
+        font-size: 42px;
+        line-height: 63px;
+    }
+    .product{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .product-li{
+        width: 23%;
+        padding-right: 12px;
+        padding-left: 12px;
+        margin-bottom: 80px;
+    }
+    .introduce-li{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        a{
+            color: #000000;
+        }
+        p{
+            color: #AA0601;
+            font-weight: 500;
+        }
+    }
+    .color{
+        display: flex;
+        width: 100%;
+    }
+    .bg-color-5F3E2D{
+        background: #5F3E2D;
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+    .bg-color-B75929{
+        background: #B75929;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.subnav{
+    ul{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    a{
+        padding: 12px 16px;
+        float: left;
+        border: 1px solid #555555;
+        color: black;
+    }
+    .change-page{
+        a{
+            padding: 11px 12px;
+            
+        }
+    }
+    .active{
+        background-color: #000000;
+        color: white;
+    }
+    a:hover{
+        background-color: black;
+        color: white;
+    }
+}
+
+@media (max-width:768px) {
+    .container{
+        max-width: 696px;
+    }
+    .page2-nav{
+        a{
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+        ul{
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    .page2-optical{
+        .glass{
+            background-image: url(../images/product-header-sm-1.png);
+        }
+        .person{
+            background-image: url(../images/product-header-sm-2.png);
+        }
+    }
+    .Celluloid-Combi{
+        .product-li{
+            width: 45%;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width:414px){
+    .container{
+        max-width: 348px;
+    }
+    .page2-nav{
+        margin-top: 16px;
+        
+        a{
+            padding:0;
+        }
+        ul{
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .page2-optical{
+        .glass{
+            height: 136px;
+        }
+        .person{
+            height: 136px;
+        }
+        margin-bottom: 40px;
+    }
+    .Celluloid-Combi{
+       h1{
+        font-size: 24px;
+        line-height: 36px;
+       }
+       h2{
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 24px;
+       }
+       .product-li{
+        width: 100%;
+       }
+    }
+    .subnav{
+        li{
+        font-size: 14px;
+        line-height: 24px;
+        }
+        .change-page{
+            font-size: 14px;
+            line-height: 26px;
+            a{
+                padding: 11px 14px 12px 13px;
+            }
+        }
+        a{
+            padding: 9px 21px;
+        }
+    }
+}

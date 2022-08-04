@@ -1,0 +1,116 @@
+.store-base{
+    h1{
+        border-left: 8px solid #9F1213;
+        padding-left: 16px;
+        font-weight: 900;
+    }
+    .area{
+        display: flex;
+        select{
+            margin-left: 16px;
+            width: 304px;
+            height: 38px;          
+        }
+    }
+   
+}
+.branch{
+    .container{
+        max-width: 1320px;
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h2{
+        border:1px solid #00000020 ;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 24px;
+    }
+    &-li{
+        width: 31%;
+        margin-right: 12px;
+        margin-left: 12px;
+        margin-bottom: 48px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-news{
+            border: 1px solid #00000020;  
+            padding-left: 24px;
+            a{
+                color: #000000;
+            }
+            i{
+                padding-right: 10px;
+            } 
+        }   
+        &-nav{
+            background-color:#000000 ;
+            text-align: center;
+            padding: 16px 0;
+            a{
+                color: white;
+                padding: 16px 164px;
+                
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .branch{
+        &-li{
+            width: 46%;
+        }
+        .content{
+            &-nav{
+                a{
+                    padding: 16px 120px;
+                }
+            }
+        }
+    }
+    
+}
+@media (max-width:414px){
+    .store-base{
+        h1{
+            font-size: 24px;
+            line-height: 36px;
+            margin-top: 40px;
+            margin-bottom: 24px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+        }
+        .area{
+            margin-bottom: 24px;
+            select{
+                width: 276px;
+                font-size: 18px;
+                line-height: 26px;
+                margin-left: 8px;
+            } 
+        }
+    }
+    .branch{
+        margin-bottom: 64px;
+        &-li{
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        h2{
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+
+}

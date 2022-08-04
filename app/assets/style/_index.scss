@@ -1,0 +1,353 @@
+.tittle{
+    background-image: url(../images/home-header.png);
+    height: 787px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    .container{
+        display: flex;
+        justify-content: end;
+        text-align: right;
+    }
+    h1{
+        font-size: 64px;
+        line-height: 96px;
+        padding-bottom: 16px;
+    }
+    h2{
+        font-size: 36px;
+        line-height: 54px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        background-color: #AA0601;
+        padding: 6px 12px 6px 12px;
+    }
+    a:hover{
+        color: #AA0601;
+        background-color: white;
+    }
+}
+
+
+.principle{
+    background-color: #FBF2F2;
+    text-align: center;
+    .service{
+        display: flex;
+        justify-content: space-between;
+    }
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li{
+            width: 23%;
+        }
+        p{
+            text-align: left;
+        }
+    }
+    img{
+        width: 27%;
+        margin: auto;
+        margin-bottom: 16px;
+    }
+}
+
+
+.classic {
+    text-align: center;
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    li{
+        width: 32%;
+    }
+  }
+
+.co-branding{
+    text-align: center;
+    background-image: url(../images/index-bg.png);
+    height: 608px;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-double{
+    background-image: url(../images/home-section4-1.png);
+    height: 240px;
+    background-size: cover;
+    background-position: center center;
+}
+.img-youth{
+    background-image: url(../images/home-section4-2.png);
+    height: 240px;
+    background-size: cover;
+    background-position: center center;
+}
+.co-branding{
+    ul{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    li{
+        background-color: white;
+        width:100%;
+    }
+}
+
+.recommend{
+    h2{
+        text-align: center;
+    }
+    ul{
+        display: flex;
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-left: -12px;
+        margin-right: -12px;
+        justify-content: space-between;
+    }
+    li{
+        width: 23%;
+    }
+    .content{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        height: 205px;
+        box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.1);
+        padding: 16px;
+    }
+}
+
+.contactUs{
+    background-color: #FBF2F2;
+    .container{
+        max-width: 636px;
+    }
+    h2{
+        text-align: center;
+    }
+    input{
+        background-color: #FBF2F2;
+    }
+    ul{
+        input{
+            width: 100%;
+        }
+    }
+    .enter{
+        text-align: center;
+        max-width: 416px;
+        margin: 0 auto;
+        padding-top: 64px;
+        a{
+            background-color: #AA0601;
+            padding: 16px 176px 16px 176px;
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: black;
+            background-color: #650300;
+        }
+    }
+    textarea{
+        resize: none;
+        background-color: #FBF2F2;
+        width:100%;
+        height: 136px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .container{
+        padding: 0 36px;
+    }
+    .tittle{
+        background-image: url(../images/home-header-sm.png);
+    }
+
+    .principle{
+        .service{
+            flex-wrap: wrap;
+            li{
+            width: 48%;
+        }
+        }
+    }
+    .classic{
+        ul{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        li{
+            width: 51%;
+            margin-bottom: 24px;
+            max-width: 100%;
+        }
+
+    }
+
+    .co-branding{
+        background-image: url(../images/index-bg-sm.png);
+        height: 960px;
+        ul{
+            flex-wrap: wrap;
+        }
+        li{
+            margin-bottom: 24px;
+            height: 328px;
+        }
+        img{
+            width: 100%;
+            height: 240px;
+        }
+    }
+
+    .recommend{
+        ul{
+            flex-wrap: wrap;
+        }
+        li{
+            width: 48%;
+            margin-bottom: 24px;
+        }
+    }
+    
+    .contactUs{
+        .container{
+            max-width: 576px;
+        }
+        input{
+            height: 30px;
+        }
+        textarea{
+            height: 130px;
+        }
+        .enter{
+            max-width: 336px;
+            padding-top: 56px;
+            a{
+                padding: 16px 136px 16px 136px;
+            }
+        }
+    }
+
+}
+
+@media (max-width:414px) {
+
+    .mb-80{
+        margin-bottom: 40px;
+    }
+
+    .pb-80{
+        padding-bottom: 40px;
+    }
+
+    .pt-80{
+        padding-top: 40px;
+    }
+    .container{
+        padding: 0 13px 0 14px;
+    }
+    .tittle{
+        height: 396px;
+        h2{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        h1{
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+
+    .principle {
+        h2{
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 24px;
+        }
+        ul{
+            li{
+                width: 100%;
+            }
+        }
+
+    }
+
+    .classic{
+        li{
+            width: 100%;
+        }
+        h2{
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .co-branding{
+        background-image: url(../images/index-bg-sm.png);
+        height: 820px;
+        h2{
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 24px;
+            padding-top: 40px;
+        }
+    }
+
+
+
+    .img-double{
+        background-image: url(../images/home-section4-1-sm.png);
+    }
+
+    .img-youth{
+        background-image: url(../images/home-section4-2-sm.png);
+    }
+
+    .recommend{
+        li{
+            width: 100%;
+        }
+        h2{
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 24px;
+        }
+    }
+    .contactUs{
+        h2{
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 24px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .container{
+            width: 348px;
+        }
+        .enter{
+            padding-top: 40px;
+            width: 348px;
+            padding-bottom: 40px;
+        }
+    }
+
+   
+}

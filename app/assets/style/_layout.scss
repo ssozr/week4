@@ -1,0 +1,236 @@
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header{
+    height: 80px;
+    img{
+        height: 48.75px;
+        max-width: 80px;
+        margin-top: 16px;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color:white;
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
+    .list{
+        display: none;
+    }
+}
+
+.footer{
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        margin-left: -24px;
+        margin-right: -24px;
+        width: 80%;
+        a{
+            padding-right: 24px;
+            padding-left: 24px;
+        }
+    }
+    .community{
+        display: flex;
+        img{
+            width: 48px;
+            height: 48px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        a{
+            padding-right: 16px;
+            padding-left: 16px;
+        }
+    }
+    .container{
+        padding-top: 48px;
+    }
+    .fa-solid{
+        color:white;
+        margin-right: 22px;
+    }
+    .contact{
+        font-size: 36px;
+        line-height: 54px;
+    }
+    .content{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .list{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .terms{
+        margin-top: 32px;
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 1px solid white;
+        padding-top: 32px;
+        justify-content: space-between;
+        padding-bottom: 32px;
+        ul{
+            display: flex;
+        }
+        a{
+            padding-right: 24px;
+            padding-left: 24px;
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+.container{
+    padding: 0 36px;
+}
+
+.header{
+    height: 172px;
+    .container{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        ul{
+            display: none;
+            flex-wrap: wrap;
+        }
+    }
+    .list{
+        display: block;
+        display: flex;
+        li{
+            width: 49%;
+        }
+    }
+    img{
+        width: 80px;
+        margin-bottom: 15.45px;
+    }
+    li{
+        width: 48%;
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border: 1px solid white;
+    }
+}
+
+.footer{
+    .community{
+        margin-right: -8px;
+        margin-left: -8px;
+        img{
+            max-width: 40px;
+            max-height: 40px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+}
+
+    }
+
+@media (max-width:414px) {
+
+.container{
+    padding: 0 13px 0 14px;
+}
+
+.header{
+    height: 190px;
+    .list{
+        display: block;
+        display: flex;
+        li{
+            width: 49.4%;
+        }
+    }
+    .container{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        ul{
+            display: none;
+        }
+    }
+    img{
+        width: 80px;
+        margin-bottom: 15.45px;
+    }
+    ul{
+        flex-wrap: wrap;
+    }
+    li{
+        width: 48%;
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border: 1px solid white;
+    }
+}
+
+.footer{
+    .nav{
+        display: none;
+    }
+    .community{
+        margin-left: -4px;
+        margin-right: -4px;
+        img{
+            padding-left: 4px;
+            padding-right: 4px;
+            height: 24px;
+            width: 24px;
+        }
+    }
+    .contact{
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .list{
+        flex-direction: row-reverse;
+        align-items: flex-end;
+    }
+    .terms{
+        padding-top: 16px;
+        padding-bottom: 24px;
+        margin-top: 24px;
+        p{
+            margin-bottom: 8px;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        li{
+            width: 100%;
+            padding-bottom: 8px;
+        }
+    }
+    .container{
+        padding-top: 24px;
+    }
+}
+    }
