@@ -6,6 +6,13 @@
     .news{
         width: 40%;
         margin-right: 24px;
+        .store-photo{
+            background-image: url(../images/storepage-1.png);
+            height: 224px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
         h2{
             border:1px solid #00000020 ;
             padding-top: 8px;
@@ -37,6 +44,10 @@
             width: 100%;
             flex-wrap: wrap;
             margin-right: 0;
+            .store-photo{
+                width: 60%;
+                margin-right: 24px;
+            }
             img{
                 width: 50%;
                 margin-right: 24px;
@@ -59,6 +70,10 @@
             }
             &-li{
                 flex-wrap: wrap;
+            }
+            .store-photo{
+                width:100% ;
+                margin-right: 0;
             }
         }
     }

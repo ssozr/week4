@@ -1,4 +1,4 @@
-.tittle{
+.index-tittle{
     background-image: url(../images/home-header.png);
     height: 787px;
     background-size: cover;
@@ -6,10 +6,12 @@
     background-position: center;
     display: flex;
     align-items: center;
+
     .container{
         display: flex;
         justify-content: end;
         text-align: right;
+        width: 100%;
     }
     h1{
         font-size: 64px;
@@ -31,8 +33,6 @@
         background-color: white;
     }
 }
-
-
 .principle{
     background-color: #FBF2F2;
     text-align: center;
@@ -41,7 +41,6 @@
         justify-content: space-between;
     }
     ul{
-        width: 100%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -58,18 +57,6 @@
         margin-bottom: 16px;
     }
 }
-
-
-.classic {
-    text-align: center;
-    ul{
-        display: flex;
-        justify-content: space-between;
-    }
-    li{
-        width: 32%;
-    }
-  }
 
 .co-branding{
     text-align: center;
@@ -127,11 +114,21 @@
         padding: 16px;
     }
 }
+.classic {
+    text-align: center;
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    li{
+        width: 32%;
+    }
+  }
 
-.contactUs{
+.contactus{
     background-color: #FBF2F2;
     .container{
-        max-width: 636px;
+        max-width: 666px;
     }
     h2{
         text-align: center;
@@ -167,13 +164,25 @@
         height: 136px;
     }
 }
+@media (max-width:920px){
+    .classic{
+        ul{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        li{
+            width: 51%;
+            margin-bottom: 24px;
+            max-width: 100%;
+        }
 
-
+    }
+}
 @media (max-width:768px) {
     .container{
         padding: 0 36px;
     }
-    .tittle{
+    .index-tittle{
         background-image: url(../images/home-header-sm.png);
     }
 
@@ -224,7 +233,7 @@
         }
     }
     
-    .contactUs{
+    .contactus{
         .container{
             max-width: 576px;
         }
@@ -240,6 +249,9 @@
             a{
                 padding: 16px 136px 16px 136px;
             }
+        }
+        .agree{
+            display: flex;
         }
     }
 
@@ -261,7 +273,7 @@
     .container{
         padding: 0 13px 0 14px;
     }
-    .tittle{
+    .index-tittle{
         height: 396px;
         h2{
             font-size: 16px;
@@ -340,12 +352,15 @@
             line-height: 24px;
         }
         .container{
-            width: 348px;
+            max-width: 348px;
         }
         .enter{
             padding-top: 40px;
             width: 348px;
             padding-bottom: 40px;
+            a{
+                padding: 16px 142px;
+            }
         }
     }
 

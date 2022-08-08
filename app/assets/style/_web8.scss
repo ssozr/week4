@@ -21,6 +21,7 @@
 }
 
 .blog{
+    
     margin-bottom: 124px;
     img{
         width: 50%;
@@ -31,7 +32,6 @@
     }
     .article{
         display: flex;
-        justify-content: space-between;
         margin-bottom: 60px;
     }
     .content{
@@ -40,8 +40,14 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
+        width: 50%;
+        .news{
+            span{
+                display: none;
+            }
+        }
     }
-    .title{
+    .tittle{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -96,8 +102,8 @@
 
 @media (max-width:768px){
     .blog{
-        .more{
-            display: none;
+        .container{
+            padding: 0 0;
         }
         h2{
             font-size: 24px;
@@ -118,6 +124,20 @@
         .title{
             margin-bottom: 0;
         }
+        .content{
+            .news{
+                span{
+                    display: inline;
+                    a{
+                        color: #555555;
+                    }
+                    a:hover{
+                        color: #650300;
+                    }
+                }
+            }
+        }
+        .more{display: none;}
         margin-bottom: 80px;
     }
 }
@@ -126,6 +146,13 @@
         display: none;
     }
     .blog{
+        .container{
+            padding-left: 13px;
+            padding-right: 14px;
+        }
+        .more{
+            display: none;
+        }
         h1{
             font-size: 24px;
             line-height: 36px;
@@ -145,6 +172,9 @@
         }
         .content{
             margin-left: 0;
+            width: 100%;
+            align-items: flex-start;
+
         }
         margin-bottom: 64px;
     }

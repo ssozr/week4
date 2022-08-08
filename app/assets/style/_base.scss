@@ -1,0 +1,19 @@
+
+*, *::before, *::after {
+    box-sizing:border-box;
+   }
+
+   body{
+    font-family: 'Roboto','Noto Sans TC';
+    font-weight: 400;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}

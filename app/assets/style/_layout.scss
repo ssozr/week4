@@ -1,5 +1,5 @@
 .container{
-    max-width: 1296px;
+    max-width: 1320px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -49,8 +49,8 @@
     .community{
         display: flex;
         img{
-            width: 48px;
             height: 48px;
+            width: 100%;
             padding-left: 16px;
             padding-right: 16px;
         }
@@ -217,11 +217,12 @@
         padding-top: 16px;
         padding-bottom: 24px;
         margin-top: 24px;
+        display: flex;
+        justify-content:center;
         p{
             margin-bottom: 8px;
         }
         ul{
-            display: flex;
             flex-wrap: wrap;
         }
         li{
