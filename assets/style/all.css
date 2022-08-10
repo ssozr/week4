@@ -511,6 +511,19 @@ a {
     margin: auto;
     margin-bottom: 16px; }
 
+.co-branding ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center; }
+
+.co-branding li {
+  background-color: white;
+  width: 100%; }
+
 .co-branding {
   text-align: center;
   background-image: url(../images/index-bg.png);
@@ -529,19 +542,6 @@ a {
   height: 240px;
   background-size: cover;
   background-position: center center; }
-
-.co-branding ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center; }
-
-.co-branding li {
-  background-color: white;
-  width: 100%; }
 
 .recommend h2 {
   text-align: center; }
@@ -578,16 +578,16 @@ a {
   padding: 16px; }
 
 .classic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center; }
   .classic ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-  .classic li {
-    width: 32%; }
+    text-align: center; }
 
 .contactus {
   background-color: #FBF2F2; }
@@ -618,18 +618,6 @@ a {
     width: 100%;
     height: 136px; }
 
-@media (max-width: 920px) {
-  .classic ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .classic li {
-    width: 51%;
-    margin-bottom: 24px;
-    max-width: 100%; } }
-
 @media (max-width: 768px) {
   .container {
     padding: 0 36px; }
@@ -650,6 +638,10 @@ a {
     width: 51%;
     margin-bottom: 24px;
     max-width: 100%; }
+  .classic h2 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 24px; }
   .co-branding {
     background-image: url(../images/index-bg-sm.png);
     height: 960px; }
@@ -751,9 +743,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100%;
   padding: 0;
   margin: 0; }
@@ -898,7 +887,7 @@ a {
     width: 45%;
     margin-bottom: 40px; } }
 
-@media (max-width: 414px) {
+@media (max-width: 450px) {
   .container {
     max-width: 348px; }
   .page2-nav {
@@ -1085,7 +1074,7 @@ a {
     width: 45%;
     margin-bottom: 40px; } }
 
-@media (max-width: 414px) {
+@media (max-width: 450px) {
   .page3-nav {
     margin-top: 16px; }
     .page3-nav a {
@@ -1601,7 +1590,7 @@ a {
       display: -ms-flexbox;
       display: flex; } }
 
-@media (max-width: 414px) {
+@media (max-width: 470px) {
   .web-9 {
     margin-bottom: 64px; }
     .web-9 .container-tab-link {
